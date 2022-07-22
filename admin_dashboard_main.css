@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+header,
+main,
+footer {
+  padding-left: 240px;
+  font-family: 'Jua', sans-serif;
+}
+
+ul li a , li b{ 
+  font-family: 'Jua', sans-serif; 
+}
+
+body {
+  background: white;
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+
+#credits li,
+#credits li a {
+  color: white;
+}
+
+#credits li a {
+  font-weight: bold;
+}
+
+
+
+.fab-tip {
+  position: fixed;
+  right: 85px;
+  padding: 0px 0.5rem;
+  text-align: right;
+  background-color: #323232;
+  border-radius: 2px;
+  color: #FFF;
+  width: auto;
+}
+
+.fa {
+  color: black;
+  font-size: 5em !important;
+}
+
+.row span h5{
+  color: rgb(86,86,86);
+}
+
