@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Member Information</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Jua&display=swap'><link rel="stylesheet" href="admin_menu_info.css">
+</head>
+<body>
+
+<div style="margin: 10px;">
+    <div class="col s6">
+      <div  class="card" align="center">
+        <div class="row" style="padding: 35px;" >
+          <div class="right card-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 funds-card-colored">
+                    <div class="col-sm-6 col-md-4 member-table">
+                        <div class="funds-table-header">메뉴번호</div>
+                        <div class="table-data">1</div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 member-table">
+                        <div class="funds-table-header">카테고리</div>
+                        <div class="table-data"><input type="text" size=10 id="steak" name="steak"></div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 member-table">
+                        <div class="funds-table-header">메뉴명</div>
+                        <div class="table-data"><input type="text" size=10 id="Food_name" name="Food_name"></div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 member-table">
+                        <div class="funds-table-header">가격</div>
+                        <div class="table-data"><input type="text" size=10 id="Food_price" name="Food_price"></div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-md-4 member-table">
+                        <div class="funds-table-header">사진</div>
+                        <div  class="table-data" method="post" enctype="multipart/form-data">
+                         <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                         </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-md-4 member-table">
+                        <div class="funds-table-header">메뉴 설명</div>
+                        <div class="table-data"><input type="text" size=10 id="Food_contents" name="Food_contents"></div>
+                    </div>
+
+
+                    <a type="button" class="btn btn-back pull-right" href="admin_menu_info.html">리스트</a>
+                    <a type="button" class="btn btn-modify pull-right" style="margin-right:10px;" href="admin_menu_info.html">수정</a>
+                    <!-- end of colored card -->
+                </div>
+		<!-- end of row -->
+	</div>
+        </div>
+            </div>
+                </div>
+                    </div>
+                         </div>
+                            </div>
+    
+    
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<!-- header & aside js -->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script><script src="./admin_dashboard_main.js"></script>
+</body>
+</html>
