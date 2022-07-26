@@ -50,6 +50,10 @@ body {
   .fixed_headers th:nth-child(9) {
     width: 50px;
   }
+  .fixed_headers td:nth-child(10),
+  .fixed_headers th:nth-child(10) {
+    width: 50px;
+  }
   .fixed_headers thead {
     background-color: #333;
     color: #FDFDFD;
