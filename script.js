@@ -29,3 +29,13 @@ $(document).ready(function(){
       }
     });
   });
+
+  $(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 400, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
