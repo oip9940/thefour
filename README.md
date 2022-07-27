@@ -1,9 +1,6 @@
 # thefour
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f3e7f01f3816459dbda80c772edef4caf01040a8
+
 1. 형상관리 V  1.0 관련 내용
  - 메인 페이지 결합
  - Client section 수정
@@ -17,10 +14,9 @@
  - 홈페이지 내용 수정
  - 일부 이미지 변경
 
-<<<<<<< HEAD
  3. reservation
 
 -- 2차 결합 완료 -- 
 
- 4. Admin Dashboard 메뉴 연결 완료
+ 4. Admin Dashboard 메뉴간 연결 완료
 
