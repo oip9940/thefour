@@ -20,7 +20,7 @@
 <<<<<<< HEAD
  3. reservation
 
--- 2s차 결합 완료 -- 
+-- 2차 결합 완료 -- 
 
  4. Admin Dashboard 메뉴 연결 완료
 
