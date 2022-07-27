@@ -270,3 +270,4 @@ header .navigation-bar a:hover .underline{
       {
         background-color:#ea4c89
       }
+      textarea {resize : vertical;} 

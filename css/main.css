@@ -517,9 +517,6 @@
       font-family: Cabin, sans-serif;
       color: #a96700;
   }
-  #login{
-    height:50px;
-  }
     .login_form {
         position: relative; /* 로그인폼 position:absolue 기준 */
         height: 500px; /* section 크기로 변경해야함 */

@@ -38,4 +38,5 @@ $(document).ready(function(){
         }, 400, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+  });
+  
