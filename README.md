@@ -1,9 +1,5 @@
 # thefour
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f3e7f01f3816459dbda80c772edef4caf01040a8
 1. 형상관리 V  1.0 관련 내용
  - 메인 페이지 결합
  - Client section 수정
