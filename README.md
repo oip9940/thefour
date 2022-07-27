@@ -16,4 +16,9 @@
 
  3. 2022 07 25
  - Admin menu upload, list, info, modify front 등록
+
+ 4. 2022 07 27 
+ - v 1.1 불러와서 사용
+ - 파일 폴더 정리
+ - Admin reservation 등록
  

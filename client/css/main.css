@@ -9,7 +9,7 @@
     }
     header{
         height: calc(100vh - 22px);
-        background: url("img/food.jpg");
+        background: url("../../img/food.jpg");
         background-size: cover;
         padding: 20px 70px;
         position: relative;
@@ -224,7 +224,7 @@
     
     .recipes .image {
         height: 350px;
-        background: url("img/ha.png") fixed center;
+        background: url("../../img/ha.png") fixed center;
         background-size: cover;
     }
     
@@ -399,7 +399,7 @@
     /*메뉴 종료*/
     .fixed-image {
         top:10px;
-        background: url("img/fi_img.jpg") fixed center;
+        background: url("../../img/fi_img.jpg") fixed center;
         background-size: cover;
         height: 400px;
         padding : 10px;
@@ -521,7 +521,7 @@
         right: 0;
         width: 50%;
         height: 100%;
-        background: #3498db url("img/sign_up_image.jpg");
+        background: #3498db url("../../img/sign_up_image.jpg");
         background-size: cover;
         background-position: 50% 50%;
       }
@@ -531,7 +531,7 @@
         left: 0;
         width: 50%;
         height: 100%;
-        background: #e74c3c url("img/login_image.jpg");
+        background: #e74c3c url("../../img/login_image.jpg");
         background-size: cover;
         background-position: 50% 50%;
       }
