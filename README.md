@@ -1,5 +1,6 @@
 # thefour
 
+<<<<<<< HEAD
 1. 형상관리 V  1.0 관련 내용
  - 메인 페이지 결합
  - Client section 수정
@@ -14,3 +15,5 @@
  - 일부 이미지 변경
 
  3. reservation
+
+-- 1차 결합 완료 -- 

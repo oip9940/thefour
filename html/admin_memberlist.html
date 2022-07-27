@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Only Fixed Table Headers</title>
+  <link rel="stylesheet" href="/css/admin_memberlist.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Jua&display=swap'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- IE < 10 does not like giving a tbody a height.  The workaround here applies the scrolling to a wrapped <div>. -->
+<!--[if lte IE 9]>
+<div class="old_ie_wrapper">
+<!--<![endif]-->
+
+<table class="fixed_headers">
+  <thead>
+    <tr>
+      <th>아이디</th>
+      <th>비밀번호</th>
+      <th>이름</th>
+      <th>생년월일</th>
+      <th>성별</th>
+      <th>전화번호</th>
+      <th>주소</th>
+      <th>이메일</th>
+      <th>보기</th>
+      <th>삭제</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ymcho</td>
+      <td>1234</td>
+      <td>조유민</td>
+      <td>1996-07-23</td>
+      <td>남자</td>
+      <td>010-1234-1234</td>
+      <td>대전 둔산동</td>
+      <td>ymcho@korea.kr</td>
+      <td><a href="./admin_memberinfo.html" style="text-decoration: none;">보기</a></td>
+      <td>삭제</td>
+    </tr>
+    <tr>
+      <td>ymcho</td>
+      <td>1234</td>
+      <td>조유민</td>
+      <td>1996-07-23</td>
+      <td>남자</td>
+      <td>010-1234-1234</td>
+      <td>대전 둔산동</td>
+      <td>ymcho@korea.kr</td>
+      <td>보기</td>
+      <td>삭제</td>
+    </tr>
+    <tr>
+      <td>ymcho</td>
+      <td>1234</td>
+      <td>조유민</td>
+      <td>1996-07-23</td>
+      <td>남자</td>
+      <td>010-1234-1234</td>
+      <td>대전 둔산동</td>
+      <td>ymcho@korea.kr</td>
+      <td>보기</td>
+      <td>삭제</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<!--[if lte IE 9]>
+</div>
+<!--<![endif]-->
+<!-- partial -->
+  
+</body>
+</html>
