@@ -8,3 +8,6 @@ Jul 25
 
 Jul 26
 - Notice 및 Q&A 게시판 추가
+
+Jul 27
+- FAQ 추가

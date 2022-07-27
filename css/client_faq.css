@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+/* section FAQ */
+
+.faq{
+    color : white;
+    font-family: 'Jua', sans-serif;
+}
+
+h1 {
+    color: black;
+}
+
+.faq-inner{
+    width: 850px;
+    margin: 50px auto;
+}
+
+.faq-inner h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.accordion{
+    margin-top: 50px;
+}
+
+input[name="faq-item"]{
+    display: none;
+}
+
+input[name="faq-item"] + label{
+    display: block;
+    background-color: #303030;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.faq-content{
+    background-color: #303030;
+    padding: 15px;
+    margin-bottom: 10px;
+    /* display: none; */
+    max-height: 0;
+    transition: max-height .3s;
+    padding: 0;
+    /* transition: .3s; == transition: all .3s;*/
+    overflow: hidden;
+    font-size: 20px;
+    
+}
+
+label {
+    font-size: 20px;
+}
+
+input[name="faq-item"] + label span{
+    float: right;
+}
+
+aside{
+    text-align: center;
+    margin-top: 50px 0;
+}
+
+aside p{
+    font-size: 16px;
+}
+
+aside .getstarted{
+    margin-top: 20px;
+}
+
+/* checked */
+input[name="faq-item"]:checked + label + .faq-content{
+    /* display: block; */
+    max-height: 400px;
+    padding: 15px;
+    
+}
+
+input[name="faq-item"]:checked + label span{
+    transform: rotate(45deg);
+}
