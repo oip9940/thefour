@@ -1,0 +1,50 @@
+.funds-card-colored{
+    background-color: rgb(86,86,86);
+    padding: 20px;
+    border-radius: 8px;
+  /*   max-width: 700px;  */
+      font-family: 'Jua', sans-serif;
+      overflow: auto;
+  
+  }
+  
+  .funds-card-colored > h3 {
+      margin-top: 0px;
+      font-weight: 700;
+      margin-bottom: 20px;
+  }
+  
+  .member-table{
+      padding: 0px;
+  }
+  .funds-table-header{
+      background-color: #f1f1f1;
+      font-weight: 700;
+  }
+  
+  .table-data{
+      background-color: white;
+      height : 45px;
+  }
+  
+  .funds-table-header, .table-data{
+      padding: 10px;
+  }
+  
+  .btn-edit, .btn-back, .btn-modify{
+      color: #000000f3;
+      background-color: grey;
+      font-weight: 700;
+      margin-top: 20px;
+  }
+  
+  .btn-edit:hover{
+      background-color: #8d90b4;
+  }
+  
+  .row-break{
+      margin-top:  20px;
+      margin-bottom: 20px;
+      height: 5px;
+  }
+  
