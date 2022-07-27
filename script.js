@@ -18,15 +18,14 @@ $(document).ready(function(){
     });
   });
 
-  $(document).ready(function(){
-    $(window).scroll(function(){
+  $(document).ready(() => {
+    $(window).scroll(() => {
       var scroll = $(window).scrollTop();
       if (scroll > 400) {
         $("header nav").css("background", "rgba(0, 0, 0, 0.5)")
 
-      }
-      else{
+      } else {
         $("header nav").css("background", "")
       }
-    })
-  })
+    });
+  });
