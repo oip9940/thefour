@@ -26,7 +26,7 @@
         z-index: 20;
         display: flex;
     }
-    
+
     header nav .logo{
         flex-basis: 67%;
         padding-left: 50px;
