@@ -1,4 +1,5 @@
 const navcolor = document.querySelector("header nav .navigation-bar ul li a");
+// login_form sign form transform 이벤트 
 $(document).ready(function(){
     $('#goRight').on('click', function(){
       $('#slideBox').animate({
