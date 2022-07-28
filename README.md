@@ -13,10 +13,11 @@
  - 홈페이지 내용 수정
  - 일부 이미지 변경
 
- 3. reservation
-
-
--- 2차 결합 완료 -- 
-
- 4. Admin Dashboard 메뉴간 연결 완료
+3. V 1.2 업데이트
+- Adminpage 관리 페이지 업데이트
+- Notice List 페이지 업데이트
+- reservation 신규 페이지 업데이트
+- reservation page 일정관리, Adminpage 일정 관리  FULLCalendar 라이브러리 업데이트
+- Mainpage scroll 이벤트 업데이트
+- Adminpage 기능별 화면 구현 업데이트
 

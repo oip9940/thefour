@@ -30,7 +30,8 @@ $(document).ready(function(){
     });
   });
 
-  $(function() {
+  // 페이지 스크롤
+  $(function() { 
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
