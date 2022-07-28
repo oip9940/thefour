@@ -9,14 +9,3 @@ $(document).ready(() => {
       }
     });
   });
-
-  select: function(arg) { // 캘린더에서이벤트를 생성
-    let title = prompt('일정 내용을 입력하세요 :');
-    if (title) {
-        calendar.addEvent({
-            title: title,
-            start: arg.start,
-            end: arg.end,
-            allDay: arg.allDay
-        })
-    }
