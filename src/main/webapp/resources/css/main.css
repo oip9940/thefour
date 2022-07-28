@@ -1,0 +1,817 @@
+    * {
+        box-sizing: border-box;
+    }
+    html { scroll-behavior: smooth; }
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: calc(100vh - 22px);
+        background: url("../img/st.jpg");
+        background-size: cover;
+        padding: 20px 70px;
+        position: relative;
+    }
+
+    header nav{
+        width: 100%;
+        height: 50px;
+        left:0;
+        position: fixed;
+        top: 0;
+        padding: 15px 10px 0;
+        z-index: 20;
+        display: flex;
+    }
+
+    header nav .logo{
+        flex-basis: 67%;
+        padding-left: 50px;
+
+    }
+    
+    header nav .logo a{
+      line-height: 25px;
+        text-decoration: none;
+        transition: all .5s;
+        font-size: 25px;
+        font-weight: bold;
+        color:#fff;
+    }
+    
+    /* header .navigation-bar.show {
+        width: 40%;
+    }
+    header .navigation-bar.show a {
+        color: #ccc !important;
+    }
+    header .navigation-bar.show a:hover {
+        color: #fff !important;
+    } */
+    
+    header nav .navigation-bar ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    header nav .navigation-bar ul li{
+        flex: 1;
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    header nav .navigation-bar ul li a{
+        text-decoration: none;
+        font-family: Cabin, sans-serif;
+        color:#fff;
+        font-size: 16px;
+        position: relative;
+    }
+
+    header nav .navigation-bar ul li a .headcolor{
+      color:black;
+    }
+    
+    header nav .navigation-bar ul li a .underline{
+        height: 2px;
+        width: 0;
+        bottom: -4px;
+        transition: all .3s;
+        display: block;
+        position: absolute;
+    
+    }
+    header .navigation-bar a:hover .underline{
+        width: 100%;
+    }
+    
+    header .text{
+        top: 35%;
+        text-align: center;
+        position: relative;
+    }
+    
+    header .text h2{
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-size: 100px;
+        font-weight: normal;
+        margin: 0 0 -55px;
+        color: #a96700; 
+    }
+    
+    header .text h1{
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        letter-spacing: 9.4px;
+        margin: 20px 0 15px;
+        margin-bottom: 0;
+        color: #fff;
+    }
+    
+    header .text .arrow{}
+    
+    header .text .arrow .fa-asterisk{
+        color: #a96700; 
+        vertical-align: super;
+    }
+    
+    header .text span{
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 15px;
+        margin-bottom: 12px;
+        color: #fff;
+    }
+    
+    header .text .button button{
+        border: none;
+        padding: 9px 18px;
+        letter-spacing: 2.4px;
+        font-size: 12px;
+        font-family: source_sans_problack, sans-serif;
+        border-radius: 3px;
+        outline: none;
+    }
+    
+    /* header부분 hover효과 */
+    /* 호버 폰트 색상 변경 and 폰트 색상 */
+    header .navigation-bar a:hover{
+        color: #a96700; 
+    }
+    
+    /* 호버 배경 변경 */
+    header nav .navigation-bar .underline, .text .button button:hover {
+        background-color: #a96700;
+    }
+    /* 호버 마우스 올라갈때 3초 간격주기 */
+    header .navigation-bar ul, header .text .button button{
+        transition: .3s;
+    }
+
+    /*About_us 시작*/
+    
+    #about-us {
+        padding: 60px 60px 50px 60px;
+        display: flex;
+        height: 600px;
+        
+    }
+    
+    #about-us .text {
+        text-align: center;
+        flex: 50%;
+        padding: 40px 52px 0 0;
+    }
+
+    #about-us .text h2 {
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-size: 100px;
+        font-weight: normal;
+        margin: 70px 0 -55px;
+        color: #a96700;
+    }
+    
+    #about-us .text h3 {
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+ 
+    #about-us .text .fa-asterisk {
+        color: #9a9998;
+    }
+
+    #about-us .text p {
+        color: #515151;
+        line-height: 27px;
+    }
+    
+    #about-us .image-container {
+        display: flex;
+        flex: 50%;
+    }
+    
+    .about_us1 {
+        margin-left: 20px;
+    }
+    
+    .about_us2 {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    .about_us1 img {
+      top: 0;
+      left:0;
+      height: 100%;
+      width: 400px;
+    }
+    
+    .about_us2 img {
+      top: 0;
+      left:0;
+      height: 100%;
+      width: 400px;
+    }
+
+    /*About_us 종료*/
+
+    /*고정 3개 이미지 시작*/
+    
+    .recipes {
+        position: relative;
+        padding-top: 0px;
+    }
+    
+    .recipes .image {
+        height: 350px;
+        background: url("../img/ha.png") fixed center;
+        background-size: cover;
+    }
+    
+    .recipes .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color :#ffffff
+    }
+    .recipes .text h3{
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    
+    .fix-text {
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-size: 100px;
+        font-weight: normal;
+        margin: 0 0 -55px;
+        color: #804f00;
+    }
+    /*고정 3개 이미지 종료*/
+
+    /*메뉴 시작*/
+    #menu {
+        display: flex;
+        padding: 60px;
+    }
+    #menu .box-model {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        width: 100%;
+        display: none;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        z-index: 20;
+        background-color: rgba(0,0,0,.7);
+    }
+    #menu .box-model.active {
+        display: block;
+    }
+    #menu .box-model.active body {
+        overflow: hidden;
+    }
+    #menu .box-model .close {
+        color: #ccc;
+        right: 25px;
+        top: 10px;
+        z-index: 20;
+    }
+    #menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left {
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        top: 50%;
+        border-right: 2px solid #fff;
+        border-top: 2px solid #fff;
+        transform: rotate(45deg);
+        z-index: 20;
+    }
+    #menu .box-model .arrow .arrow-left {
+        left: 20px;
+        transform: rotate(-135deg);
+    }
+    #menu .box-image-container {
+        position: relative;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+    #menu .box-image-container .box-image {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+  
+    #menu .menu-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 60%;
+    }
+    #menu .menu-image-container .image {
+        margin: 0 20px 20px 0;
+        flex: calc( 50% - 40px);
+    }
+    #menu .menu-image-container .image img{
+        width : 100%;
+        height : 224px;
+    }
+    #menu .menu-image-container .image img{
+        cursor: pointer;
+    }
+    
+    #menu .box-model .close{
+        position: absolute;
+        transition: .3s;
+        cursor: pointer;
+    }
+    #menu .box-model .arrow .arrow-right,
+    #menu .box-model .arrow .arrow-left{
+        position: absolute; 
+        cursor: pointer;
+        
+    }
+    #menu .box-image-container .box-image{
+        position: absolute; 
+    }
+    #menu .box-model .close:hover{
+        color: #fff;
+    }
+    #menu .text {
+        flex: 55%;
+        margin-left: 65px;
+        padding: 40px 0 0 62px;
+        text-align: center;
+    }
+    #menu .text h3 {
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    #menu .text .fa-asterisk {
+        color: #9a9998;
+    }
+
+    #menu .text h2 {
+
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-size: 100px;
+        font-weight: normal;
+        margin: 50px 0 -55px;
+        color: #a96700;
+    }
+    #menu .text p {
+        color: #515151;
+        line-height: 27px;
+    }
+    #menu .text .a-CTA {
+        border-bottom: 2px solid #a96700;
+        padding-bottom: 4px;
+        letter-spacing: 1.5px;
+        font-size: 18px;
+        font-family: Cabin, sans-serif;
+        color: #a96700;
+    }
+    #menu .menu-image-container .image img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    #menu .menu-image-container .image.active img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    /*메뉴 종료*/
+    .fixed-image {
+        top:10px;
+        background: url("../img/fi_img.jpg") fixed center;
+        background-size: cover;
+        height: 400px;
+        padding : 10px;
+    }
+    .fixed-image .text {
+        margin-top:50px;
+        flex: 50%;
+        padding: 10px 100px 0 0;
+        text-align: center;
+        height:400px;
+    }
+    .fixed-image .text h2 {
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-size: 100px;
+        font-weight: normal;
+        margin: 0 0 -55px;
+        color: #a96700;
+        padding-top: 70px;
+        
+    }
+    .fixed-image .text h3 {
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .height{
+        height:60px;
+    }
+    #reservation-section {
+      padding: 60px;
+      display: flex;
+      height: 600px;
+  }
+  
+  #reservation-section .text {
+      text-align: center;
+      flex: 50%;
+      padding: 40px 52px 0 0;
+  }
+
+  #reservation-section .text h2 {
+      font-family: 'Herr Von Muellerhoff', cursive;
+      font-size: 100px;
+      font-weight: normal;
+      margin: 0 0 -55px;
+      color: #a96700;
+  }
+  
+    #reservation-section .text h3 {
+        font-family: "Source Code Pro", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    #reservation-section .text .fa-asterisk {
+        color: #9a9998;
+    }
+
+    #reservation-section .text p {
+        color: #515151;
+        line-height: 27px;
+    }
+    
+    #reservation-section .image-container {
+        display: flex;
+        flex: 50%;
+    }
+    
+    .reservation1 {
+        margin-left: 20px;
+    }
+    
+    .reservation2 {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    .reservation1 img {
+      top: 0;
+      left:0;
+      height: 100%;
+      width: 400px;
+    }
+    
+    .reservation2 img {
+      top: 0;
+      left:0;
+      height: 100%;
+      width: 400px;
+    }
+    #reservation-section .text .a-CTA {
+      border-bottom: 2px solid #a96700;
+      padding-bottom: 4px;
+      letter-spacing: 1.5px;
+      font-size: 18px;
+      font-family: Cabin, sans-serif;
+      color: #a96700;
+  }
+    .login_form {
+        position: relative; /* 로그인폼 position:absolue 기준 */
+        height: 500px; /* section 크기로 변경해야함 */
+        overflow: hidden;
+        width: 100% !important;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .login_form .backRight {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: #3498db url("../img/sign_up_image.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+      
+      .login_form .backLeft {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: #e74c3c url("../img/login_image.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+      
+      .login_form #back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -999;
+      }
+      
+      .login_form #slideBox {
+        width: 50%;
+        max-height: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin-left: 50%;
+        position: absolute;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+      .topLayer {
+        width: 200%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        left: -100%;
+    
+      }
+      
+      .topLayer .left {
+        width: 50%;
+        height: 100%;
+        background: #2C3034;
+        left: 0;
+        position: absolute;
+      }
+      
+      .topLayer .right {
+        width: 50%;
+        height: 100%;
+        background: #f9f9f9;
+        right: 0;
+        position: absolute;
+      }
+      
+      .topLayer .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 320px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .topLayer .content h2 {
+        color: #03A9F4;
+        font-weight: 300;
+        font-size: 35px;
+        margin: 15px 0;
+      }
+    
+      .topLayer .content form {
+          margin: 30px 0;
+      }
+    
+      .topLayer .form-group {
+          display: flex;
+          justify-content: space-between;
+          padding: 5px 0;
+      }
+    
+      .topLayer .left .form-label {
+          color: white;
+      }
+    
+      .topLayer .right .form-label {
+          color: black;
+      }
+      
+      .login_form button {
+        background: #03A9F4;
+        padding: 10px 16px;
+        width: auto;
+        font-weight: 600;
+        text-transform:  uppercase;
+        font-size: 14px;
+        color: #fff;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        border-radius: 2px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+        border: 0;
+        outline: 0;
+        margin: 15px 0;
+        transition: all 0.25s;
+      }
+      
+      .login_form button:hover {
+        background: #0288D1;
+        box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+      }
+      .login_form .change {
+        background: none;
+        color: #03A9F4;
+        box-shadow: none;
+      }
+      
+      .login_form .right .change:hover {
+        background: #eee;
+        color: #03A9F4;
+        box-shadow: none;
+      }
+      .login_form .left .change:hover {
+        box-shadow: none;
+        color: #03A9F4;
+        background: #363A3D;
+      }
+      .login_form input {
+        background: transparent;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid #45494C;
+        font-size: 14px;
+        color: #959595;
+      }
+      .height-div{
+        height:20px;
+      }
+      .site-footer
+      {
+        background-color:#26272b;
+        padding:80px 0 20px;
+        font-size:15px;
+        line-height:24px;
+        color:#737373;
+        height:400px;
+      }
+      .site-footer hr
+      {
+        border-top-color:#bbb;
+        opacity:0.5
+      }
+      .site-footer hr.small
+      {
+        margin:20px 0
+      }
+      .site-footer h6,
+      .site-footer h6 a
+      {
+        color:#fff;
+        font-size:16px;
+        text-transform:uppercase;
+        margin-top:5px;
+        letter-spacing:2px
+      }
+      .site-footer a
+      {
+        color:#737373;
+      }
+      .site-footer a:hover
+      {
+        color:#3366cc;
+        text-decoration:none;
+      }
+      .footer-links
+      {
+        padding-left:0;
+        list-style:none
+      }
+      .footer-links li
+      {
+        display:block
+      }
+      .footer-links a
+      {
+        color:#737373
+      }
+      .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+      {
+        color:#3366cc;
+        text-decoration:none;
+      }
+      .footer-links.inline li
+      {
+        display:inline-block
+      }
+      .site-footer .social-icons
+      {
+        text-align:right
+      }
+      .site-footer .social-icons a
+      {
+        width:40px;
+        height:40px;
+        line-height:40px;
+        margin-left:6px;
+        margin-right:0;
+        border-radius:100%;
+        background-color:#33353d
+      }
+      .footer-text
+      {
+        margin:0
+      }
+      
+      .social-icons
+      {
+        padding-left:0;
+        margin-bottom:0;
+        list-style:none
+      }
+      .social-icons li
+      {
+        display:inline-block;
+        margin-bottom:4px
+      }
+      .social-icons li.title
+      {
+        margin-right:15px;
+        text-transform:uppercase;
+        color:#96a2b2;
+        font-weight:700;
+        font-size:13px
+      }
+      .social-icons a{
+        background-color:#eceeef;
+        color:#818a91;
+        font-size:16px;
+        display:inline-block;
+        line-height:44px;
+        width:44px;
+        height:44px;
+        text-align:center;
+        margin-right:8px;
+        border-radius:100%;
+        -webkit-transition:all .2s linear;
+        -o-transition:all .2s linear;
+        transition:all .2s linear
+      }
+       .social-icons i{
+        margin-top : 10px;
+       }
+      .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+      {
+        color:#fff;
+        background-color:#29aafe
+      }
+      .social-icons.size-sm a
+      {
+        line-height:34px;
+        height:34px;
+        width:34px;
+        font-size:14px
+      }
+      .social-icons a.facebook:hover
+      {
+        background-color:#3b5998
+      }
+      .social-icons a.twitter:hover
+      {
+        background-color:#00aced
+      }
+      .social-icons a.linkedin:hover
+      {
+        background-color:#007bb6
+      }
+      .social-icons a.dribbble:hover
+      {
+        background-color:#ea4c89
+      }
