@@ -1,7 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page session="false" %>
+
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+
 <html lang="en">
 
 <head>
@@ -44,7 +46,7 @@
                 <li><a class="page-scroll" href="#reservation-section">Food<span class="underline"></span></a></li>
                 <li><a href="#">Notice<span class="underline"></span></a></li>
                 <li><a class="page-scroll" href="#login">LOGIN<span class="underline"></span></a></li>
-                <li><a href="/html/admin_dashboard_main.html">Adminpage<span class="underline"></span></a></li>
+                <li><a href="/reservation.jsp">Adminpage<span class="underline"></span></a></li>
             </ul>
         </div>
     </nav>
@@ -55,7 +57,7 @@
             <i class="fas fa-asterisk"></i>
         </div>
         <span>Ready To Be Opened</span>
-        <div class="button"><button><a href="/html/reservation.html">Reservation</a></button></div>
+        <div class="button"><button><a href="${ctx}/reservation.do">Reservation</a></button></div>
     </div>
 </header>
 <!--End Header-->
@@ -129,7 +131,7 @@
         <h3>Reservation</h3>
         <div><i class="fas fa-asterisk"></i></div>
         <p>For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.</p>
-        <div><a class="a-CTA" href="/html/reservation.html">View The Reservation</a></div>
+        <div><a class="a-CTA" href="${ctx}/reservation.do">View The Reservation</a></div>
     </div>
 </div>
 <div class="fixed-image">
