@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="kr.mr.mapper.ReplyMapper">
+	<insert id="insert">
+		insert into reply(board_brd_num, rep_contents, rep_id)
+		values(#{brd_num}, #{rep_contents}, #{rep_id})
+	</insert>
+	
+	<select id="read" resultType="replyVO">
+		select * from reply where rep_num = #{rep_num}
+	</select>
+	
+	<update id="update">
+		update reply set reply_contents = #{reply_contents},
+		update_date = now() where rep_num = #{rep_num}
+	</update>
+	
+	<delete id="delete">
+		delete from reply where rep_num = #{rep_num}
+	</delete>
+	
+	<select id="getListBybrd_num" resultType="replyVO">
+		select * from reply
+		where board_brd_num = #{brd_num} order by board_brd_num desc
+	</select>
+</mapper>

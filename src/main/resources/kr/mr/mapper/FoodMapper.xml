@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="kr.mr.mapper.FoodMapper">
+  <select id="getList" resultType="FoodVO">			
+  	select * from food_detail
+  </select>
+  
+   <select id="menuInfo" parameterType = "Integer" resultType = "FoodVO">
+	select * from food_detail where food_num = #{food_num}
+</select>
+  
+    <insert id="menuInsert" parameterType="foodVO">
+  	insert into food_detail (food_num, food_code, food_name, food_price, food_contents)
+  	values(#{food_num}, #{food_code}, #{food_name}, #{food_price}, #{food_contents})
+  </insert>
+  
+   <delete id="menuDelete" parameterType="Integer">
+  	delete from food_detail where food_num = #{food_num}
+  </delete>
+  
+ <select id="admenuUpdate" parameterType = "FoodVO">
+	update food_detail set 
+	food_num=#{food_num}, food_code=#{food_code}, food_name=#{food_name},
+	food_price=#{food_price}, food_contents=#{food_contents}, food_yn=#{food_yn}
+	where food_num = #{food_num}
+</select>
+ 
+
+</mapper>

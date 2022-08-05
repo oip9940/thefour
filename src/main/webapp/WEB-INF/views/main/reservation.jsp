@@ -10,7 +10,17 @@
    <link href="resources/css/main.min.css" rel='stylesheet' />
    <link rel='stylesheet' href="resources/css/reservation.css?after" />
   
-   
+    <script  src="resources/js/reservation.js"></script>
+
+		<script>
+			var member = ${login.user_id}
+			
+			if(member != null){
+		
+			alert("로그인 후 예약 바랍니다."); // alert()는 경고창을 띄우는 함수입니다.	
+		
+			}
+		</script>
 
     <script>
 
@@ -23,7 +33,7 @@
         });
   
       </script>
-      
+    
       <div class="height-div">
         <div id='calendar'></div>
         
@@ -34,7 +44,7 @@
 			<tr>
 				<td>이름</td>
 				<td>
-					<input class="form-control" type="text" name="bName"/>
+					<input class="form-control" value=${member.user_name} type="text" name="bName" readonly="readonly"/>
 				</td>
 			</tr>
             <tr>
@@ -46,7 +56,7 @@
 			<tr>
 				<td>연락처</td>
 				<td>
-					<input class="form-control" type="text" name="bTitle"/>
+					<input class="form-control" value=${member.user_tel} type="text" name="bTitle"/>
 				</td>
 			</tr>
             <tr>

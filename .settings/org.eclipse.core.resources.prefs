@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/main/webapp/WEB-INF/views/home.jsp=UTF-8
+encoding//src/main/webapp/resources/css/admin_menu_upload.css=UTF-8
+encoding//src/main/webapp/resources/css/admin_reservation.css=UTF-8
+encoding//src/main/webapp/resources/css/reservation.css=UTF-8

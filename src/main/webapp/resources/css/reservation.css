@@ -88,17 +88,17 @@ header nav .navigation-bar ul li a .underline{
 header .navigation-bar a:hover .underline{
     width: 100%;
 }
-   /* header부분 hover효과 */
-    /* 호버 폰트 색상 변경 and 폰트 색상 */
+   /* header遺�遺� hover�슚怨� */
+    /* �샇踰� �룿�듃 �깋�긽 蹂�寃� and �룿�듃 �깋�긽 */
     header .navigation-bar a:hover{
         color: #a96700; 
     }
     
-    /* 호버 배경 변경 */
+    /* �샇踰� 諛곌꼍 蹂�寃� */
     header nav .navigation-bar .underline, .text .button button:hover {
         background-color: #a96700;
     }
-    /* 호버 마우스 올라갈때 3초 간격주기 */
+    /* �샇踰� 留덉슦�뒪 �삱�씪媛덈븣 3珥� 媛꾧꺽二쇨린 */
     header .navigation-bar ul, header .text .button button{
         transition: .3s;
     }

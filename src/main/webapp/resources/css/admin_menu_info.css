@@ -10,7 +10,6 @@
   
   .funds-card-colored > h3 {
       margin-top: 0px;
-      font-weight: 700;
       margin-bottom: 20px;
   }
   
@@ -19,7 +18,6 @@
   }
   .funds-table-header{
       background-color: #f1f1f1;
-      font-weight: 700;
   }
   
   .table-data{
@@ -34,7 +32,6 @@
   .btn-edit, .btn-back, .btn-modify{
       color: #000000f3;
       background-color: grey;
-      font-weight: 700;
       margin-top: 20px;
   }
   

@@ -10,9 +10,9 @@
         </div>
         
         <div class="col-xs-4 col-md-2">
-            <h6><a href="#">Home</a></h6>
+            <h6><a href="home.do">Home</a></h6>
             <br/>
-            <h6><a href="#">Reservation</a></h6>
+            <h6><a href="reservation.do">Reservation</a></h6>
         </div>
 
         <div class="col-xs-4 col-md-2">
@@ -27,8 +27,8 @@
         <div class="col-xs-4 col-md-2">
           <h6>Other</h6>
           <ul class="footer-links">
-            <li><a href="#">Notice</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="clnoticelist.do">Notice</a></li>
+            <li><a href="clqnalist.do">QnA</a></li>
           </ul>
         </div>
       </div>

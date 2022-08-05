@@ -4,7 +4,7 @@ body {
 }
 
 .fixed_headers {
-    width: 50%;
+    width: 85%;
     table-layout: fixed;
     border-collapse: collapse;
   }
@@ -12,11 +12,11 @@ body {
   .fixed_headers th,
   .fixed_headers td {
     padding: 5px;
-    text-align: left;
+    text-align: center;
   }
   .fixed_headers td:nth-child(1),
   .fixed_headers th:nth-child(1) {
-    min-width: 80px;
+    min-width: 100px;
   }
   .fixed_headers td:nth-child(2),
   .fixed_headers th:nth-child(2) {
@@ -24,15 +24,15 @@ body {
   }
   .fixed_headers td:nth-child(3),
   .fixed_headers th:nth-child(3) {
-    width: 70px;
+    width: 80px;
   }
   .fixed_headers td:nth-child(4),
   .fixed_headers th:nth-child(4) {
-    width: 140px;
+    width: 250px;
   }
   .fixed_headers td:nth-child(5),
   .fixed_headers th:nth-child(5) {
-    width: 70px;
+    width: 300px;
   }
   .fixed_headers td:nth-child(6),
   .fixed_headers th:nth-child(6) {
@@ -44,16 +44,10 @@ body {
   }
   .fixed_headers td:nth-child(8),
   .fixed_headers th:nth-child(8) {
-    width: 130px;
+    width: 200px;
   }
-  .fixed_headers td:nth-child(9),
-  .fixed_headers th:nth-child(9) {
-    width: 50px;
-  }
-  .fixed_headers td:nth-child(10),
-  .fixed_headers th:nth-child(10) {
-    width: 50px;
-  }
+
+
   .fixed_headers thead {
     background-color: #333;
     color: #FDFDFD;

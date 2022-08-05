@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+   
+<mapper namespace="kr.mr.mapper.BoardMapper">
+  <!-- QnA 게시글 수 구하기 -->
+  <select id="totalCnt" resultType="Integer">
+	select count(*) total from board where brd_cd = 2
+	<include refid="criteria"></include>	
+	</select>
+  <!-- Notice 게시글 수 구하기 -->
+  <select id="noticetotalCnt" resultType="Integer">
+	select count(*) total from board where brd_cd = 1
+	<include refid="criteria"></include>	
+  </select>
+<!-- 
+ ${} : Statement , 파라미터값이 그대로 입력됨
+ #{} : PreparedStatement (? ? ?), 파라미터 값이 ' ' 감싸져서 입력 
+   	
+	  '%#{keyWord}%' ===> '%'aaa'%' 
+	  '%${keyWord}%' ===> '%aaa%'
+	  
+	  오라클은 문자 합치기 연산자 ||
+	  mySQL은    "          concat()
+--> 
+  <sql id = "criteria">
+  	<if test="searchType=='S'.toString()">
+  		and brd_title like concat('%',#{keyWord},'%')
+  	</if>
+  	<if test="searchType=='C'.toString()">
+  		and brd_contents like concat('%',#{keyWord},'%')
+  	</if>
+  	<if test="searchType=='W'.toString()">
+  		and brd_id like concat('%',#{keyWord},'%')
+  	</if>
+  </sql>	
+
+  <select id="getList" resultType="boardVO">			
+    select * from board where brd_cd = 2
+    <include refid="criteria"></include>
+    						<!-- startIndex, cntPerPage  -->
+    order by brd_num desc limit #{startIndex}, #{cntPerPage}
+  </select>
+  
+  <select id="noticeList" resultType="boardVO">			
+    select * from board where brd_cd = 1
+    <include refid="criteria"></include>
+    						<!-- startIndex, cntPerPage  -->
+    order by brd_num desc limit #{startIndex}, #{cntPerPage}
+  </select>
+  
+   <select id="view" parameterType="Integer" resultType="boardVO">
+  	select * from board where brd_num=#{brd_num}
+  </select>
+  
+  <delete id="delete" parameterType="Integer">
+  	delete from board where brd_num=#{brd_num}
+  </delete>
+  
+  <update id="update" parameterType="boardVO">
+  	update board set brd_title=#{brd_title}, brd_contents=#{brd_contents} where brd_num=#{brd_num}
+  </update>
+
+  <insert id="insert" parameterType="boardVO">
+  	insert into board(brd_cd, brd_title, brd_contents, brd_id)
+  	values(2, #{brd_title}, #{brd_contents}, #{brd_id})
+  </insert>
+  
+  <insert id="notice_insert" parameterType="boardVO">
+  	insert into board(brd_cd, brd_title, brd_contents, brd_id)
+  	values(1, #{brd_title}, #{brd_contents}, #{brd_id})
+  </insert>
+    
+</mapper>

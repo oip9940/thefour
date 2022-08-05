@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
+
+
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -26,24 +30,34 @@
     <script src="https://kit.fontawesome.com/82cfbbd12d.js" crossorigin="anonymous"></script>
     <!--FontAwesome-->
     
+	<link rel="stylesheet " href="resources/css/reservation.css">
     <script  src="resources/js/reservation.js"></script>
-
 
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="#">THE FOUR</a>
+                <a href="home.do">THE FOUR</a>
             </div>
             <div class="navigation-bar">
                 <ul>
                     <li class="active"><a class="page-scroll" href="#about-us">About&nbsp;us<span class="underline"></span></a></li>
-                    <li><a class="page-scroll" href="#menu">Reservation<span class="underline"></span></a></li>
+                    <li><a class="page-scroll" href="reservation.do">Reservation<span class="underline"></span></a></li>
                     <li><a class="page-scroll" href="#reservation-section">Food<span class="underline"></span></a></li>
-                    <li><a href="#">Notice<span class="underline"></span></a></li>
-                    <li><a class="page-scroll" href="#login">LOGIN<span class="underline"></span></a></li>
-                    <li><a href="/admin_dashboard_main.html">Adminpage<span class="underline"></span></a></li>
+                    <li><a href="clnoticelist.do">Notice<span class="underline"></span></a></li>
+                    <c:if test = "${member == null }">
+               		<li><a class="page-scroll" href="#login">LOGIN<span class="underline"></span></a></li>
+                    </c:if>
+	                <c:if test = "${member != null }">
+	                <li><a class="page-scroll" href="logout.do">LogOut<span class="underline"></span></a></li>
+	                </c:if>
+	                <c:if test="${ member != null && member.user_cd == 2}">
+	                <li><a href="${ctx}/admin.do"><span class="underline">AdminPage</span></a></li>
+	                </c:if>
+	                 <c:if test="${ member != null && member.user_cd == 1}">
+	                <li><a href="${ctx}/admin.do"><span class="underline">MyPage</span></a></li>
+	                </c:if>  
                 </ul>
             </div>
         </nav>
