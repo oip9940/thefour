@@ -20,6 +20,11 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- summernote -->
+<script src="resources/js/summernote/summernote-lite.js"></script>
+<script src="resources/js/summernote/lang/summernote-ko-KR.js"></script>
+<link rel="stylesheet" href="resources/css/summernote/summernote-lite.css">
+
 </head>
 
 

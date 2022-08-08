@@ -2,14 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../inc/admin_header.jsp"%>
 
-<style>
-	.ck-editor__editable { height: 200px;}
-	.ck-content {font-size: 12px;}
-</style>
-<!-- <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/translations/ko.js"></script>
- -->
-<!-- <script src="ckeditor/ckeditor.js"></script> -->
 <div class="container d-flex mt-5 mb-5 justify-content-center">
 	<div class="w-75 shadow p-5 rounded border">
 		<h3>글쓰기</h3>
@@ -42,5 +34,15 @@
 		$("#btn-list").click(() => {
 			location.href="<c:url value='adnoticelist.do?viewPage=${viewPage}'/>";
 		})
+		
+		$('#brd_contents').summernote({
+			  height: 300,                 // 에디터 높이
+			  minHeight: null,             // 최소 높이
+			  maxHeight: null,             // 최대 높이
+			  focus: false,                  // 에디터 로딩후 포커스를 맞출지 여부
+			  lang: "ko-KR",					// 한글 설정
+			  placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
+	          
+		});
 	});
 </script>
