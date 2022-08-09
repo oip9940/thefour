@@ -1,9 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="./inc/admin_header.jsp" %>
+<head>
+<link rel="stylesheet" href="resources/css/admin_main.css">
+</head>
 
   <main>
-    <div style="margin: 10px;">
+    <div>
       <div class="col s6">
         <div  class="card" align="center">
           <div class="row" style="padding: 35px;" >

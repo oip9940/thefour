@@ -4,7 +4,6 @@
 <%@ include file="../inc/admin_header.jsp" %>
 <head>
 <link rel="stylesheet" href="resources/css/admin_memberlist.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Jua&display=swap'>
 </head>
 <main>
 	<div style="margin: 10px;">	
@@ -69,5 +68,6 @@ function movePage(obj){
 }
 </script>
 </main>
-
+</body>
+</html>
 
