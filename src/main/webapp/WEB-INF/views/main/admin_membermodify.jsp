@@ -4,56 +4,58 @@
 <head>
 <link rel="stylesheet" href="resources/css/admin_memberinfo.css">
 </head>
+<div class="aside-main-box">
+<div class="aside-box"></div>
 <main>
-<div style="margin: 10px;">
-    <div class="col s6">
+<div>
+    <div class="#">
       <div  class="card" align="center">
-        <div class="row" style="padding: 35px;">
+        <div class="row">
           <div class="center card-title">
-                <div class="col-sm-12 funds-card-colored">
+                <div class="funds-card-colored">
                     <h3 style="color:black;">회원 정보</h3>
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">ID</div>
                         <div class="table-data">test1234</div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">비밀번호</div>
                         <div class="table-data"><input type="text" size=10 id="password" name="password"/></div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">이름</div>
                         <div class="table-data">김몰리</div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">생년월일</div>
                         <div class="table-data">2003-01-01</div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">성별</div>
                         <div class="table-data">남자</div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">주소</div>
                         <div class="table-data"><input type="text" size=10 id="address" name="address"/></div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">이메일</div>
                         <div class="table-data"><input type="text" size=10 id="email" name="email"/></div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">가입일자</div>
                         <div class="table-data">2022-06-30</div>
                     </div>
 
 
-                    <div class="col-sm-6 col-md-4 hidden-xs member-table">
+                    <div class="member-table">
                         <div class="funds-table-header">사용자 권한</div>
                         <div class="table-data">
 												  <select class="form-control" id="auth">
@@ -80,8 +82,8 @@
     
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 </main>
+</div>
 </body>
 </html>
 </body>

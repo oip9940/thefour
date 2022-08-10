@@ -1,10 +1,18 @@
+.aside-main-box {
+	display: grid;
+	grid-template-columns: 240px 1fr;
+}
+
+main {
+	background: #313348;
+	margin: 20px;
+	border-radius: 10px;
+}
+
 .funds-card-colored{
-    background-color: rgb(86,86,86);
     padding: 20px;
-    border-radius: 8px;
-  /*   max-width: 700px;  */
-      font-family: 'Jua', sans-serif;
-      overflow: auto;
+    overflow: auto;
+    width: 60%;
   
   }
   
@@ -14,9 +22,18 @@
       margin-bottom: 20px;
   }
   
-  .member-table{
+  .member-table {
       padding: 0px;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      border: 1px solid #c0c0c0;
   }
+  
+
+  .member-table div:nth-child(2) {
+	  text-align: left;
+  }
+  
   .funds-table-header{
       background-color: #f1f1f1;
       font-weight: 700;

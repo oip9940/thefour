@@ -4,168 +4,34 @@
 <head>
 <link rel="stylesheet" href="resources/css/admin_main.css">
 </head>
-
+<div class="aside-main-box">
+  <div class="aside-box"></div>
   <main>
-    <div>
-      <div class="col s6">
-        <div  class="card" align="center">
-          <div class="row" style="padding: 35px;" >
-            <div class="left card-title">
-              <b>월별 방문자 수</b>
-            </div>
-          </div>
+  	<div class="title-box">
+  		<span><b>DashBoard</b></span>
+  	</div>
 
-          <div class="row">
-            <div style="width: 100%;">
-             <div id="curve_chart"></div>
-            </div>
+  	<div class="chart-box">
+      <div class="curve_chart-box">
+          <div class="chart-title"><b>월별 방문자 수</b></div>
+          <div class="chart-sizing">
+          	<div id="curve_chart"></div>
           </div>
-        </div>
       </div>
+      
+	  <div class="barchart-box">
+          <div class="chart-title"><b>시간별 예약자</b></div>
+          <div class="chart-sizing">
+          	<div id="barchart_values"></div>
+          </div>
+	  </div>
     </div>
-    <div  style="margin: 10px;">
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>시간별 예약자 </b>
-            </div>
-          </div>
-          <div class="row">
-            <div id="barchart_values" ></div>
-          </div>
-        </div>
-      </div>
+    <div class="status-box">
     </div>
-
-    <div class="row" style="margin : 2px">
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>Client List</b>
-            </div>
-          </div>
-
-          <div class="row">
-
-            <a href="${ctx}/admemberlist.do">
-
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="fa fa-user"></i>
-                <span class="indigo-text text-lighten-1"><h5>회원 정보</h5></span>
-              </div>
-            </a>
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
-
-
-			 
-            <a href="${ctx}/admemberinfo.do">
-
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="fa fa-users"></i>
-                <span class="indigo-text text-lighten-1"><h5>회원 정보 수정</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>Reservation</b>
-            </div>
-          </div>
-          <div class="row">
-            <a href="${ctx}/adreservation.do">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="fa fa-calendar"></i>
-                <span class="indigo-text text-lighten-1"><h5>예약 일정 등록</h5></span>
-              </div>
-            </a>
-
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
-
-            <a href="${ctx}/adreservationlist.do">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="fa fa-calendar-check-o"></i>
-                <span class="indigo-text text-lighten-1"><h5>예약자 확인</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="margin : 2px">
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>Food Register</b>
-            </div>
-          </div>
-
-          <div class="row">
-
-            <a href="${ctx}/admenuupload.do">
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="fa fa-cutlery"></i>
-                <span class="indigo-text text-lighten-1"><h5>신규 메뉴 등록</h5></span>
-              </div>
-            </a>
-
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
-
-            <a href="${ctx}/admenulist.do">
-
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="fa fa-coffee"></i>
-                <span class="indigo-text text-lighten-1"><h5>메뉴리스트</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s6">
-        <div style="padding: 35px;" align="center" class="card">
-          <div class="row">
-            <div class="left card-title">
-              <b>Notice</b>
-            </div>
-          </div>
-          <div class="row">
-
-            <a href="adnoticelist.do">
-
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <i class="fa fa-bullhorn"></i>
-                <span class="indigo-text text-lighten-1"><h5>공지사항 등록</h5></span>
-              </div>
-            </a>
-            <div class="col s1">&nbsp;</div>
-            <div class="col s1">&nbsp;</div>
-
-
-            <a href="adqnalist.do">
-
-              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                <!-- <i class="indigo-text text-lighten-1 large material-icons">view_list</i> -->
-                <i class="fa fa-comments-o"></i>
-                <span class="truncate indigo-text text-lighten-1"><h5>질문게시판 답변</h5></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="menu-box">
     </div>
   </main>
+ </div>
 </body>
 
 </html>
@@ -194,7 +60,38 @@
 
         var options = {
           curveType: 'function',
-          legend: { position: 'bottom' }
+          legend: { position: 'bottom' },
+          chartArea: {
+              backgroundColor: {
+                  fill: '#313348',
+              },
+          },
+          backgroundColor: {
+              fill: '#313348',
+          },
+          hAxis: {
+              title: '월',
+              titleTextStyle: {
+                  color: '#9ca3a5'
+              },
+              textStyle:{
+                  color: '#9ca3a5'
+              }
+          },
+          vAxis: {
+              title: '방문자 수',
+              titleTextStyle: {
+                  color: '#9ca3a5'
+              },
+              textStyle:{
+                  color: '#9ca3a5'
+              }
+          },
+          legend: {
+              textStyle: {
+                  color: '#9ca3a5'
+          	}
+			}
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -226,10 +123,39 @@
   
         var options = {
           title: "",
-          width: 900,
-          height: 400,
           bar: {groupWidth: "95%"},
           legend: { position: "none" },
+          chartArea: {
+              backgroundColor: {
+                  fill: '#313348',
+              },
+          },
+          backgroundColor: {
+              fill: '#313348',
+          },
+          hAxis: {
+              title: '예약자 수',
+              titleTextStyle: {
+                  color: '#9ca3a5'
+              },
+              textStyle:{
+                  color: '#9ca3a5'
+              }
+          },
+          vAxis: {
+              title: '시간대',
+              titleTextStyle: {
+                  color: '#9ca3a5'
+              },
+              textStyle:{
+                  color: '#9ca3a5'
+              }
+          },
+          legend: {
+              textStyle: {
+                  color: '#9ca3a5'
+          	}
+			}
         };
         var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
         chart.draw(view, options);

@@ -18,9 +18,9 @@
 <link rel="stylesheet" href="resources/css/admin_dashboard_main.css">
 
 <!-- summernote -->
-<script src="resources/js/summernote/summernote-lite.js"></script>
+<!-- <script src="resources/js/summernote/summernote-lite.js"></script>
 <script src="resources/js/summernote/lang/summernote-ko-KR.js"></script>
-<link rel="stylesheet" href="resources/css/summernote/summernote-lite.css">
+<link rel="stylesheet" href="resources/css/summernote/summernote-lite.css"> -->
 
 </head>
 
@@ -51,15 +51,13 @@
         <ul>
           <li><a href="${ctx}/admemberlist.do">회원 정보</a>
           </li>
-          <li><a href="${ctx}/admemberinfo.do">회원 정보 수정</a>
         </ul>
       </li>
       
       <li class="sub-menu">
         <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Reservation</span><i class="arrow fa fa-angle-right pull-right"></i></a>
         <ul>
-          <li><a href="${ctx}/adreservation.do">예약 일정 등록</a>
-          </li>
+          
 
           <li><a href="${ctx}/adreservationlist.do">예약자 리스트 확인</a>
           </li>

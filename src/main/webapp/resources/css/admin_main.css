@@ -1,3 +1,52 @@
+.aside-main-box {
+	display: grid;
+	grid-template-columns: 240px 1fr;
+}
+
+
 main {
+	margin: 5px;
 	position: relative;
+	height: 98vh;
+	display: grid;
+	grid-template-rows: 100px 1fr 1fr 1fr;
+}
+
+main .title-box {
+	background: #313348;
+	margin: 20px;
+	border-radius: 10px;
+	height: 60px;
+	line-height: 60px;
+}
+
+main .title-box span {
+	color: #d1d5db;
+	font-size: 30px;
+	padding: 0 0 0 10px;
+}
+
+main .chart-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+main .chart-box .curve_chart-box,
+main .chart-box .barchart-box {
+	background: #313348;
+	border-radius: 10px;
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+main .chart-box .chart-title{
+	color: #9ca3a5;
+}
+
+main .chart-box .chart-sizing {
+	width: 80%;
 }

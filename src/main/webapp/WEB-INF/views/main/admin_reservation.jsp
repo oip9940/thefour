@@ -7,10 +7,7 @@
 <link href="resources/css/main.min.css" rel='stylesheet' />
 <link rel='stylesheet' href="resources/css/admin_reservation.css?after" />
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?ver=1"></script>
-<!-- 헤더랑 결합시 admin_header 서랍 글자 줄어드는 현상 발생 아래 두 코드-------------------------------------------------->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css?ver=1"/>
-<!------------------------------------------------------------------------------------------------------->
+
 </head>
 
 <script>

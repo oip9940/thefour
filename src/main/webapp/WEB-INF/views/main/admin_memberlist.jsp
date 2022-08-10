@@ -5,6 +5,8 @@
 <head>
 <link rel="stylesheet" href="resources/css/admin_memberlist.css">
 </head>
+<div class="aside-main-box">
+<div class="aside-box"></div>
 <main>
 	<div style="margin: 10px;">	
 		<div class="col s6">
@@ -68,6 +70,7 @@ function movePage(obj){
 }
 </script>
 </main>
+</div>
 </body>
 </html>
 
