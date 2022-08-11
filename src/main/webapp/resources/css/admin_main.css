@@ -14,6 +14,7 @@ main {
 
 main .title-box {
 	background: #313348;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	margin: 20px;
 	border-radius: 10px;
 	height: 60px;
@@ -34,6 +35,7 @@ main .chart-box {
 main .chart-box .curve_chart-box,
 main .chart-box .barchart-box {
 	background: #313348;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	border-radius: 10px;
 	margin: 20px;
 	padding: 20px;

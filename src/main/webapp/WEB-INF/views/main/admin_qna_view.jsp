@@ -3,6 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ include file="../inc/admin_header.jsp" %>
+<link rel="stylesheet" href="resources/css/admin_qna_view.css">
+<div class="aside-main-box">
+  <div class="aside-box"></div>
+<main>
 <div class="container d-flex mt-5 justify-content-center">
 	<div class="w-75 shadow p-5 rounded border">
 		<h3>글상세보기</h3>
@@ -47,6 +51,8 @@
 			<button type="button" id="btn-list" class="btn btn-primary">리스트</button>
 		</div>
 	</div>
+</div>
+</main>
 </div>
 <script type="text/javascript">
 $(document).ready(function(){

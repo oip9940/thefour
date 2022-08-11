@@ -3,7 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ include file="../inc/admin_header.jsp" %>
-
+<link rel="stylesheet" href="resources/css/admin_notice_modify.css">
+<div class="aside-main-box">
+  <div class="aside-box"></div>
+<main>
 <div class="container d-flex mt-5 justify-content-center">
 	<div class="w-75 shadow p-5 rounded border">
 		<form id="moveForm" method="post" action="<c:url value='adnoticemodify.do'/>">
@@ -49,6 +52,8 @@
 			</div>
 		</form>
 	</div>
+</div>
+</main>
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){

@@ -15,6 +15,7 @@ main {
 
 main .calender-box {
 	background: #313348;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	margin: 20px;
 	border-radius: 10px;
 	padding: 10px;
@@ -23,6 +24,7 @@ main .calender-box {
 
 main .board-box {
 	background: #313348;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	margin: 20px;
 	border-radius: 10px;
 	padding: 10px;

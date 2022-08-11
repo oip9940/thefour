@@ -1,21 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+.aside-main-box {
+	display: grid;
+	grid-template-columns: 240px 1fr;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
 
 .form {
-  position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #313348;
+  border-radius: 5px;
   width: 100%;
   heigth: 100%;
-  margin: 5px;
+  margin: 20vh 20px 5px 20px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+.form h3 {
+	color: #d1d5db;
+}
 .form input {
   font-family: "Roboto", sans-serif;
+  color: #d1d5db;
   outline: 0;
-  background: #f2f2f2;
+  background: #2a2b3d;
   width: 50%;
   border: 0;
   margin: 0 0 15px;
@@ -26,19 +40,19 @@
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  background: #2c3e50;
   outline: 0;
-
   width: 50%;
   border: 0;
   padding: 15px;
-  color: #808080;
+  color: #d1d5db;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #888888;
+  background: #23313f;
 }
 .form .message {
   margin: 15px 0 0;
@@ -84,7 +98,4 @@
 }
 .container .info span .fa {
   color: #EF3B3A;
-}
-body {
-  
 }

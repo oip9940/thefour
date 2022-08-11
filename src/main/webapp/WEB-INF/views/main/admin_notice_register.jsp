@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../inc/admin_header.jsp"%>
-
+<link rel="stylesheet" href="resources/css/admin_notice_register.css">
+<div class="aside-main-box">
+  <div class="aside-box"></div>
+<main>
 <div class="container d-flex mt-5 mb-5 justify-content-center">
 	<div class="w-75 shadow p-5 rounded border">
 		<h3>글쓰기</h3>
@@ -28,6 +31,8 @@
 		</form>
 
 	</div>
+</div>
+</main>
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){

@@ -5,11 +5,11 @@
 
    <link rel='stylesheet' href="resources/css/admin_menu_upload.css?after" />
 
-
 </head>
 <body>
+<div class="aside-main-box">
+  <div class="aside-box"></div>
 <main>
-<!-- partial:index.partial.html -->
 <div class="form">
 <h3> 카테고리 등록</h3>
 <form action="${ctx}/catInsert.do" method="post">
@@ -33,7 +33,7 @@
    
             <div class="form_section_content">
                <div class="cate_wrap">
-                  <span>대분류</span>
+                  <span style="color: #b3b3b3">대분류</span>
                      <select class="cate1">
                         <option selected value="none">선택</option>
                      </select>
@@ -58,6 +58,7 @@
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../resources/js/admin_menu_upload.js"></script>
 </main>
+</div>
 <script>
 let catList = JSON.parse('${catList}');
 

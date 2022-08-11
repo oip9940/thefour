@@ -5,8 +5,10 @@
 <link rel="stylesheet" href="resources/css/admin_menu_list.css?after">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Jua&display=swap'>
 </head>
+<div class="aside-main-box">
+  <div class="aside-box"></div>
 <main>
-	<div style="margin: 10px;">	
+	<div>	
 		<div class="col s6">
 			<div  class="card" align="center">
 				<div class="row" >
@@ -51,6 +53,7 @@
 		</div>
 	</div>
 </main>
+</div>
 
 <script type="text/javascript">
 	function menuDel(no){
@@ -61,7 +64,5 @@
 	}
 
 </script>
-</body>
-</html>
 </body>
 </html>
